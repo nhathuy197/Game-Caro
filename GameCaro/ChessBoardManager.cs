@@ -88,7 +88,10 @@ namespace GameCaro
             if (btntemp.BackgroundImage != null) { return;  }
             Mask(btntemp);
             ChangePlayer();
-    
+            if (IsEndGame(btntemp))
+            {
+                EndGame();
+            }
         }
         private void EndGame()
         {
